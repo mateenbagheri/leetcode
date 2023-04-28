@@ -34,7 +34,7 @@ func TestTwoSums(t *testing.T) {
 
 	for _, test := range tests {
 		got1 := twoSumsOptimal(test.input, test.target)
-		got2 := twoSumsOptimal(test.input, test.target)
+		got2 := twoSum(test.input, test.target)
 		if !reflect.DeepEqual(test.expected, got1) {
 			t.Errorf("expected %v but instead got %v", test.expected, got1)
 		}
